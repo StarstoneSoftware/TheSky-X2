@@ -1,3 +1,3 @@
 //See hardwarelist.txt for details on this file format.
 //Version|Manufacturer|Model|Comment|MapsTo|PlugInDllName
-1|ToupTek|SkyEye|SkyEye Eyepiece| |libToupTekX2
+1|ToupTek|ToupTek|ToupTek Camera| |libToupTekX2
