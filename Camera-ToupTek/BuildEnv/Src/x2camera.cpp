@@ -45,16 +45,16 @@
 #include <stdlib.h>
 #include "x2camera.h"
 
-#include "../../../../licensedinterfaces/sberrorx.h"
-#include "../../../../licensedinterfaces/serxinterface.h"
-#include "../../../../licensedinterfaces/theskyxfacadefordriversinterface.h"
-#include "../../../../licensedinterfaces/sleeperinterface.h"
-#include "../../../../licensedinterfaces/loggerinterface.h"
-#include "../../../../licensedinterfaces/basiciniutilinterface.h"
-#include "../../../../licensedinterfaces/mutexinterface.h"
-#include "../../../../licensedinterfaces/tickcountinterface.h"
-#include "../../../../licensedinterfaces/basicstringinterface.h"
-#include "../../../../licensedinterfaces/x2guiinterface.h"
+#include "../../../licensedinterfaces/sberrorx.h"
+#include "../../../licensedinterfaces/serxinterface.h"
+#include "../../../licensedinterfaces/theskyxfacadefordriversinterface.h"
+#include "../../../licensedinterfaces/sleeperinterface.h"
+#include "../../../licensedinterfaces/loggerinterface.h"
+#include "../../../licensedinterfaces/basiciniutilinterface.h"
+#include "../../../licensedinterfaces/mutexinterface.h"
+#include "../../../licensedinterfaces/tickcountinterface.h"
+#include "../../../licensedinterfaces/basicstringinterface.h"
+#include "../../../licensedinterfaces/x2guiinterface.h"
 
 //As far as a naming convention goes, X2 implementors could do a search and 
 //replace in all files and change "X2Camera" to "CoolCompanyCamera" 
@@ -481,6 +481,13 @@ int X2Camera::CCEstablishLink(const enumLPTPort portLPT, const enumWhichCCD& CCD
     Toupcam_put_Option(hCamera, TOUPCAM_OPTION_LOW_NOISE, 1);
     Toupcam_put_Option(hCamera, TOUPCAM_OPTION_DEFECT_PIXEL, 1);
     Toupcam_put_Option(hCamera, TOUPCAM_OPTION_CG, 1);  // 1 = HCG, 2 = HDR, 0 = LCG
+    
+    unsigned short t1 = 100;
+    unsigned short t0 = 100;
+    uint32_t value = t1 << 16;
+    value |= t0;
+    Toupcam_put_Option(hCamera, TOUPCAM_OPTION_DYNAMIC_DEFECT, value);  
+    
     
     //unsigned short small, big, def;
     //Toupcam_get_ExpoAGainRange(hCamera, &small, &big, &def);

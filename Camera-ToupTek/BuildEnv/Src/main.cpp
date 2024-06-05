@@ -22,7 +22,7 @@
 #include "stdio.h"
 #include "main.h"
 #include "x2camera.h"
-#include "../../../../licensedinterfaces/basicstringinterface.h"
+#include "../../../licensedinterfaces/basicstringinterface.h"
 
 //Ths file normally does not require changing
 

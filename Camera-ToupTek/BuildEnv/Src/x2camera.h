@@ -31,17 +31,17 @@
 #define wchar_t char
 #endif
 
-#include "../../../../licensedinterfaces/sberrorx.h"
-#include "../../../../licensedinterfaces/cameradriverinterface.h"
-#include "../../../../licensedinterfaces/modalsettingsdialoginterface.h"
-#include "../../../../licensedinterfaces/noshutterinterface.h"
-#include "../../../../licensedinterfaces/x2guiinterface.h"
-#include "../../../../licensedinterfaces/subframeinterface.h"
-#include "../../../../licensedinterfaces/pixelsizeinterface.h"
-#include "../../../../licensedinterfaces/addfitskeyinterface.h"
-#include "../../../../licensedinterfaces/cameradependentsettinginterface.h"
-#include "../../../../licensedinterfaces/loggerinterface.h"
-#include "../../../../licensedinterfaces/addfitskeyinterface.h"
+#include "../../../licensedinterfaces/sberrorx.h"
+#include "../../../licensedinterfaces/cameradriverinterface.h"
+#include "../../../licensedinterfaces/modalsettingsdialoginterface.h"
+#include "../../../licensedinterfaces/noshutterinterface.h"
+#include "../../../licensedinterfaces/x2guiinterface.h"
+#include "../../../licensedinterfaces/subframeinterface.h"
+#include "../../../licensedinterfaces/pixelsizeinterface.h"
+#include "../../../licensedinterfaces/addfitskeyinterface.h"
+#include "../../../licensedinterfaces/cameradependentsettinginterface.h"
+#include "../../../licensedinterfaces/loggerinterface.h"
+#include "../../../licensedinterfaces/addfitskeyinterface.h"
 
 #include "toupcam.h"
 
