@@ -8,10 +8,10 @@
 #include "imagingsystem/hardware/interfaces/licensed/driverinfointerface.h"
 #include "enumcameraindex.h"
 #else//TheSkyX X2 Plug In Build
-#include "../../../../licensedinterfaces/driverrootinterface.h"
-#include "../../../../licensedinterfaces/linkinterface.h"
-#include "../../../../licensedinterfaces/deviceinfointerface.h"
-#include "../../../../licensedinterfaces/driverinfointerface.h"
+#include "../licensedinterfaces/driverrootinterface.h"
+#include "../licensedinterfaces/linkinterface.h"
+#include "../licensedinterfaces/deviceinfointerface.h"
+#include "../licensedinterfaces/driverinfointerface.h"
 typedef enum 
 {
 CI_NONE, 

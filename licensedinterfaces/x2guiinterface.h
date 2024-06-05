@@ -7,8 +7,8 @@
 #include "driverrootinterface.h"
 #include "components/theskyxfacadefordrivers/theskyxfacadefordriversinterface.h"
 #else
-#include "../../../../licensedinterfaces/driverrootinterface.h"
-#include "../../../../licensedinterfaces/theskyxfacadefordriversinterface.h"
+#include "../licensedinterfaces/driverrootinterface.h"
+#include "../licensedinterfaces/theskyxfacadefordriversinterface.h"
 #endif
 
 /*!   
